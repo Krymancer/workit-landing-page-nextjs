@@ -8,10 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'white': '#FFFFFF',
+        'ghost-white': '#FCF8FF',
+        'davys-grey': '#584D62',
+        'eucaplyptus': '#44FFA1',
+        'dark-purple': '#24053E',
+      },
+      fontFamily: {
+        'manrope': 'Manrope',
+        'fraunces': 'Fraunces',
       },
     },
   },
