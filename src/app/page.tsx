@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <header className='bg-dark-purple'>
-        <nav className='flex justify-between px-4 md:px-10 lg:px-40 lg:pt-14 pt-8'>
+        <nav className='flex items-center justify-between px-4 md:px-10 lg:px-40 lg:pt-14 pt-8'>
           <div className="relative flex items-center h-[24px] w-[95px]">
             <Image src={LogoWhite} alt="Workit logo" fill />
           </div>
@@ -42,7 +42,7 @@ export default function Home() {
             <Button label="Apply for access" secondary />
           </div>
         </nav>
-        <h1 className="text-white text-[80px] wonky font-fraunces w-full text-center mt-16 md:mt-14 lg:mt-14">
+        <h1 className="text-white text-[50px] lg:text-[80px] wonky font-fraunces leading-[50px] lg:leading-[80px]  w-full text-center font-semibold mt-16 md:mt-14 lg:mt-14">
           Data <span className="underline decoration-eucaplyptus">tailored</span> to <br />
           your needs.
         </h1>
@@ -50,23 +50,23 @@ export default function Home() {
           <Button label="Learn more" />
         </div>
       </header>
-      <div className="bg-ghost-white">
-        <div className="bg-dark-purple rounded-b-[100%]  h-[120px]"></div>
+      <div className="bg-ghost-white pb-6">
+        <div className="bg-dark-purple rounded-b-[100%] h-[60px] lg:h-[120px]"></div>
       </div>
 
       <main className="">
-        <div className="bg-ghost-white">
+        <div className="bg-ghost-white flex flex-col lg:flex-row">
           {items.map((item) => (<Enumerable key={item.index} {...item} />))}
         </div>
+        <div className="bg-ghost-white rounded-b-[100%]  h-[120px]"></div>
 
         <div>
-          <div className="relative lg:w-[447px] lg:h-[447px]">
+          <div className="relative lg:w-[447px] lg:h-[447px] md:w-[281px] md:h-[281px] w-[281px] h-[281px] ">
             <Image src={Founder} alt="" fill />
           </div>
           <Box />
         </div>
       </main>
-      <div className="bg-ghost-white rounded-b-[100%]  h-[120px]"></div>
 
       <footer className='flex flex-col items-center gap-14'>
         <div className='relative h-[24px] w-[95px]'>
