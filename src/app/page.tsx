@@ -60,15 +60,17 @@ export default function Home() {
         </div>
         <div className="bg-ghost-white rounded-b-[100%]  h-[120px]"></div>
 
-        <div>
-          <div className="relative lg:w-[447px] lg:h-[447px] md:w-[281px] md:h-[281px] w-[281px] h-[281px] ">
+        <div className="flex flex-col items-center px-4 md:flex-row justify-center">
+          <div className="relative lg:w-[447px] lg:h-[447px] md:w-[281px] md:h-[281px] w-[281px] h-[281px] -z-10 md:-mt-40 lg:mt-5">
             <Image src={Founder} alt="" fill />
           </div>
-          <Box />
+          <div className='-mt-12 md:w-[32rem] md:-ml-28 md:pt-72 lg:w-[45rem] lg:-ml-20'>
+            <Box />
+          </div>
         </div>
       </main>
 
-      <footer className='flex flex-col items-center gap-14'>
+      <footer className='flex flex-col items-center gap-14 py-20'>
         <div className='relative h-[24px] w-[95px]'>
           <Image src={LogoDark} alt="Workit logo" fill />
         </div>
