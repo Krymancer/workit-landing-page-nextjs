@@ -12,6 +12,9 @@ import Facebook from '@/assets/images/icon-facebook.svg';
 import Twitter from '@/assets/images/icon-twitter.svg';
 import Instagram from '@/assets/images/icon-instagram.svg';
 
+import BgPattern1 from '@/assets/images/bg-pattern-1.svg';
+import BgPattern2 from '@/assets/images/bg-pattern-2.svg';
+
 export default function Home() {
   const items = [
     {
@@ -49,18 +52,39 @@ export default function Home() {
         <div className="flex justify-center mt-10 md:mt-9 lg:mt-9">
           <Button label="Learn more" />
         </div>
+
+        <div className='absolute bottom-[70%] right-[90%]'>
+          <div className='relative hidden lg:block w-[270.29px] h-[215.10px]'>
+            <Image src={BgPattern1} alt="" fill />
+          </div>
+        </div>
+
+        <div className='absolute bottom-[65%] left-[93%]'>
+          <div className='relative hidden lg:block w-[141.29px] h-[112.10px]'>
+            <Image src={BgPattern2} alt="" fill />
+          </div>
+        </div>
+
+        <div className='lg:h-[150px] md:h-[100px] h-[50px]'>
+          <div className='absolute w-full flex justify-center py-[1rem]'>
+            <div className='relative lg:w-[767px] lg:h-[441px] md:w-[514px] md:h-[296px] w-80 h-[184px]'>
+              <Image src={Hero} alt="" fill />
+            </div>
+          </div>
+        </div>
+
       </header>
       <div className="bg-ghost-white pb-6">
         <div className="bg-dark-purple rounded-b-[100%] h-[60px] lg:h-[120px]"></div>
       </div>
 
       <main className="">
-        <div className="bg-ghost-white flex flex-col lg:flex-row">
+        <div className="bg-ghost-white flex flex-col lg:flex-row lg:pt-[200px] md:pt-[100px] pt-[50px]">
           {items.map((item) => (<Enumerable key={item.index} {...item} />))}
         </div>
         <div className="bg-ghost-white rounded-b-[100%]  h-[120px]"></div>
 
-        <div className="flex flex-col items-center px-4 md:flex-row justify-center">
+        <div className="flex flex-col items-center px-4 md:flex-row justify-center pt-10 ">
           <div className="relative lg:w-[447px] lg:h-[447px] md:w-[281px] md:h-[281px] w-[281px] h-[281px] -z-10 md:-mt-40 lg:mt-5">
             <Image src={Founder} alt="" fill />
           </div>
